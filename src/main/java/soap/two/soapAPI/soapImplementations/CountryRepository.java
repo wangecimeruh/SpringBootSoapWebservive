@@ -42,6 +42,15 @@ public class CountryRepository {
         uk.setPopulation(63705000);
 
         countries.put(uk.getName(), uk);
+
+
+        Country kenya = new Country();
+        kenya.setName("kenya");
+        kenya.setCapital("Nairobi");
+        kenya.setCurrency(Currency.KSH);
+        kenya.setPopulation(63904000);
+
+        countries.put(uk.getName(), kenya);
     }
 
     public Country findCountry(String name) {
